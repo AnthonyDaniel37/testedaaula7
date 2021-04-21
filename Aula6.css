@@ -1,0 +1,186 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: gold;
+}
+
+a:link {
+    border:rgb(0, 0, 0) 3px solid;
+    text-align: center;
+    padding: 10px;
+}
+
+a:hover {
+  color:rgb(251, 0, 0);
+  font-size: 50px;
+}
+
+a:focus {
+    color:yellow;
+}
+
+#antes::before {
+    content: "Conteúdo Antes ->";
+    color:yellowgreen;
+    font-size: 40px;
+}
+
+#antes::after {
+       content: "Conteúdo depois//->//";
+       color: rgb(223, 23, 189);
+       font-size: 40px;
+}
+
+#antes::selection {
+    color:darkgreen;
+}
+
+p {
+   font-size: 30px;
+   color: hotpink;
+}
+
+p::selection {
+    color: darkgreen;
+    border: darkgreen 2px solid;
+    background-color: darkgreen;
+}
+
+#teste {
+    border: 3px solid black;
+    height: 10%;
+    width: 10%;
+    text-align: center;
+    padding: 3px;
+    background-color: chartreuse;
+}
+
+#teste:hover {
+    animation-name: Enxurrada;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Enxurrada {
+    0%{background-color: chartreuse; color: coral;}
+    10%{background-color: crimson; color: cyan;}
+    25%{background-color: darkgoldenrod; color: darkgreen;}
+    50%{background-color: darkmagenta; color: darkorange;}
+    75%{background-color: darkred; color: darkviolet;}
+    87%{background-color: deepskyblue; color: firebrick;}
+    90%{background-color: gainsboro; color: gray;}
+    100%{background-color:  chartreuse; color: coral;}
+}
+
+ul {
+   color: gold;
+   display: flex;
+   margin: 0%;
+   padding: 0%;
+   margin-left: 27%;
+   
+}
+
+ul li{
+    list-style: none;
+    color: gray;
+    font-size: 88px;
+    letter-spacing: 15px;
+    animation: pisca-pisca 1.2s linear infinite;
+}
+
+ @keyframes pisca-pisca {
+
+     0%{
+         color: gray;
+         text-shadow: none;
+     }
+
+     90%{
+         color: gray;
+         text-shadow: none;
+
+     }
+
+     100%{
+         color: rgb(255, 251, 0);
+         text-shadow: 0 0 7px rgb(255, 251, 0), 0 0 50px #ff6c00;
+
+     }
+}
+
+ul li:nth-child(1)
+{
+     animation-delay: 0s;
+}
+
+ul li:nth-child(2)
+{
+    animation-delay: 0.1s;
+}
+
+ul li:nth-child(3)
+{
+    animation-delay: 0.2s;
+}
+
+ul li:nth-child(4)
+{
+    animation-delay: 0.3s;
+}
+
+ul li:nth-child(5)
+{
+    animation-delay: 0.4s;
+}
+
+ul li:nth-child(6)
+{
+    animation-delay: 0.5s;
+}
+
+ul li:nth-child(7)
+{
+    animation-delay: 0.6s;
+}
+
+ul li:nth-child(8)
+{
+    animation-delay: 0.7s;
+}
+
+ul li:nth-child(9)
+{
+    animation-delay: 0.8s;
+}
+
+ul li:nth-child(10)
+{
+    animation-delay: 0.9s;
+}
+
+ul li:nth-child(11)
+{
+    animation-delay: 1.0s;
+}
+
+ul li:nth-child(12)
+{
+    animation-delay: 1.1s;
+}
+
+ul li:nth-child(13)
+{
+    animation-delay: 1.2s;
+}
+
+ul li:nth-child(14)
+{
+    animation-delay: 1.3s;
+}
+
+
